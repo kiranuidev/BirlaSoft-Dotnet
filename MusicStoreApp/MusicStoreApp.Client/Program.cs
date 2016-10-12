@@ -14,7 +14,6 @@ namespace MusicStoreApp.Client
         {
             ArtistService service = new ArtistService();
             Artist artist = new Artist();
-            artist.Id = 1;
             artist.Name = "Rehman";
             service.CreateArtist(artist);
         }
