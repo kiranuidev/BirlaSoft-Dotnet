@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MusicStore.Entities\MusicStore.Entities.csproj">
+      <Project>{458f2e0e-21d6-4fcc-9707-1f94c2200d53}</Project>
+      <Name>MusicStore.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MusicStore.Service\MusicStore.Service.csproj">
+      <Project>{9B46F54F-7B4F-48D1-8C92-8EF333BA7B6D}</Project>
+      <Name>MusicStore.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

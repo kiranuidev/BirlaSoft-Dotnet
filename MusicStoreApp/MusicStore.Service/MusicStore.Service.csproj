@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{458F2E0E-21D6-4FCC-9707-1F94C2200D53}</ProjectGuid>
+    <ProjectGuid>{9B46F54F-7B4F-48D1-8C92-8EF333BA7B6D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicStore.Entities</RootNamespace>
-    <AssemblyName>MusicStore.Entities</AssemblyName>
+    <RootNamespace>MusicStore.Service</RootNamespace>
+    <AssemblyName>MusicStore.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Artist.cs" />
+    <Compile Include="ArtistService.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="IArtistService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MusicStore.DataAccess\MusicStore.DataAccess.csproj">
+      <Project>{2302e5aa-939a-47e0-bffd-b47b068378d1}</Project>
+      <Name>MusicStore.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MusicStore.Entities\MusicStore.Entities.csproj">
+      <Project>{458f2e0e-21d6-4fcc-9707-1f94c2200d53}</Project>
+      <Name>MusicStore.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
