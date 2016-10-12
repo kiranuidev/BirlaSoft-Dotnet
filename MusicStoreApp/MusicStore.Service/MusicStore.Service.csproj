@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumService.cs" />
     <Compile Include="ArtistService.cs" />
+    <Compile Include="IAlbumService.cs" />
     <Compile Include="IArtistService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

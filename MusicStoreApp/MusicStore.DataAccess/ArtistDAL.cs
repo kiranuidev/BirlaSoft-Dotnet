@@ -10,35 +10,29 @@ using System.Configuration;
 
 namespace MusicStore.DataAccess
 {
-    public class ArtistDAL
+    public class ArtistDAL:DABase
     {
-        private string _connectionString;
-        private SqlConnection _conn;
+       
         private SqlCommand _cmd;
 
         public ArtistDAL()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings["MusicStoreDB"].ConnectionString;
-            _conn = new SqlConnection(_connectionString);
             _cmd = new SqlCommand();
         }
         public int CreateArtist(Artist artist)
         {
-
             try
             {
-               
                 _cmd.CommandType = System.Data.CommandType.Text;
                 _cmd.CommandText = "INSERT INTO [Artist] VALUES ('" + artist.Name + "')";
-                _conn.Open();
-                _cmd.Connection = _conn;
+                _connection.Open();
+                _cmd.Connection = _connection;
                 var result = _cmd.ExecuteNonQuery();
-                _conn.Close();
+                _connection.Close();
                 return result;
             }
             catch (Exception ex)
             {
-
                 return 0;
             }
 

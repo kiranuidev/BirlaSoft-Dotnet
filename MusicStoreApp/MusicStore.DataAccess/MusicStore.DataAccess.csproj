@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumDAL.cs" />
     <Compile Include="ArtistDAL.cs" />
+    <Compile Include="DABase.cs" />
+    <Compile Include="DbConnectionObj.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

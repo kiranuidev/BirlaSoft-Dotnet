@@ -12,10 +12,37 @@ namespace MusicStoreApp.Client
     {
        public static void Main(string[] args)
         {
+            // var result = CreateAlbum();
+            var result = GetAllAlbums();
+        }
+
+        public static int CreateAtrtist()
+        {
             ArtistService service = new ArtistService();
             Artist artist = new Artist();
             artist.Name = "Rehman";
-            service.CreateArtist(artist);
+            var result =service.CreateArtist(artist);
+            return result;
+        }
+
+        public static int CreateAlbum()
+        {
+            var albumService = new AlbumService();
+            var album = new Album();
+            album.ArtistId = 280;
+            album.GenreId = 9;
+            album.Title = "Songs of Earth";
+            album.AlbumArtUrl = "http://localhost:8080";
+            album.Price = 1000;
+            var result = albumService.Create(album);
+            return result;
+           
+        }
+
+        public static List<Album> GetAllAlbums()
+        {
+            var albumService = new AlbumService();
+            return albumService.GetAll();
         }
     }
 
