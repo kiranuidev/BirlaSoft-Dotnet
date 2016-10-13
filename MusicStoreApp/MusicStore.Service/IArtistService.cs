@@ -10,5 +10,6 @@ namespace MusicStore.Service
     public interface IArtistService
     {
         int CreateArtist(Artist artist);
+        List<Artist> GetArtists();
     }
 }

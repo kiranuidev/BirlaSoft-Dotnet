@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{67C3D9A7-4612-4E52-955E-9D52B0244309}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{CD4B1057-3954-4E34-916B-A151D81E6275}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicStoreApp.Client</RootNamespace>
-    <AssemblyName>MusicStoreApp.Client</AssemblyName>
+    <RootNamespace>MusicStoreApp.Utils</RootNamespace>
+    <AssemblyName>MusicStoreApp.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,22 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MusicExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MusicStore.Entities\MusicStore.Entities.csproj">
-      <Project>{458f2e0e-21d6-4fcc-9707-1f94c2200d53}</Project>
-      <Name>MusicStore.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MusicStore.Service\MusicStore.Service.csproj">
-      <Project>{9B46F54F-7B4F-48D1-8C92-8EF333BA7B6D}</Project>
-      <Name>MusicStore.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

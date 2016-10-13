@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Service", "Music
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStoreApp.UI", "MusicStoreApp.UI\MusicStoreApp.UI.csproj", "{1B652B97-A933-49EB-827F-8E7E7EFE0B2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStoreApp.Model", "MusicStoreApp.Model\MusicStoreApp.Model.csproj", "{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStoreApp.Utils", "MusicStoreApp.Utils\MusicStoreApp.Utils.csproj", "{CD4B1057-3954-4E34-916B-A151D81E6275}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1B652B97-A933-49EB-827F-8E7E7EFE0B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B652B97-A933-49EB-827F-8E7E7EFE0B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B652B97-A933-49EB-827F-8E7E7EFE0B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4B1057-3954-4E34-916B-A151D81E6275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4B1057-3954-4E34-916B-A151D81E6275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4B1057-3954-4E34-916B-A151D81E6275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4B1057-3954-4E34-916B-A151D81E6275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

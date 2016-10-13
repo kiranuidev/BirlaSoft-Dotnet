@@ -13,7 +13,13 @@ namespace MusicStoreApp.Client
        public static void Main(string[] args)
         {
             // var result = CreateAlbum();
-            var result = GetAllAlbums();
+            // var result = GetAllAlbums();
+            Demo<string> demo = new Demo<string>("Kiran");
+            demo.LogToConsole();
+            Demo<int> demoInt = new Demo<int>(100);
+            demoInt.LogToConsole();
+            Console.ReadKey();
+           
         }
 
         public static int CreateAtrtist()

@@ -19,12 +19,11 @@ namespace MusicStore.Service
         {
             return _dalArtist.CreateArtist(artist);
         }
-        public List<Artist> GetAllArtists()
+        
+
+        public List<Artist> GetArtists()
         {
-            var artist = new List<Artist>();
-            artist.Add(new Artist() { Id = 281, Name = "Rehman" });
-            artist.Add(new Artist() { Id = 280, Name = "Kiran" });
-            return artist;
+            return _dalArtist.GetAllArtists();
         }
     }
 }

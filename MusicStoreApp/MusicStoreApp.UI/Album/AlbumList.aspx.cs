@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MusicStore.Entities;
 using MusicStore.Service;
+using MusicStoreApp.Model;
+using MusicStoreApp.Utils;
 
 namespace MusicStoreApp.UI.Album
 {
@@ -13,15 +15,32 @@ namespace MusicStoreApp.UI.Album
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            grdAlbums.DataSource= GetAllAlbums();
+            var data = new List<MusicStoreApp.Model.Album>();
+            //var evenRecords = data.Aggregate((a,b)=>a.Price+b.Price);
+            int[] array = { 1, 2, 3, 4, 5 };
+            var total = array.Max();
+            string user = "Kiran PVS";
+            var ouput = user.GetLastFour();
+            if (Session["AlbumData"] != null)
+            {
+                data = (List<MusicStoreApp.Model.Album>)Session["AlbumData"];
+            }
+            else
+            {
+                data = GetAllAlbums();
+                Session["AlbumData"] = data;
+            }
+           
+            grdAlbums.DataSource = data;
             grdAlbums.DataBind();
         }
 
-        private List<MusicStore.Entities.Entities.Album> GetAllAlbums()
+        private List<MusicStoreApp.Model.Album> GetAllAlbums()
         {
-            var service = new AlbumService();
-            var result = service.GetAll();
-            return result;
+            //var service = new AlbumService();
+            //var result = service.GetAll();
+            var album = new EFAlbum();
+            return album.GetAll();
         }
     }
 }

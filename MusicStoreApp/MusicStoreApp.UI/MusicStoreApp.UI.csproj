@@ -455,6 +455,14 @@
       <Project>{9B46F54F-7B4F-48D1-8C92-8EF333BA7B6D}</Project>
       <Name>MusicStore.Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MusicStoreApp.Model\MusicStoreApp.Model.csproj">
+      <Project>{AA125377-96DB-4A33-9AD2-0F6EE499C7B9}</Project>
+      <Name>MusicStoreApp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MusicStoreApp.Utils\MusicStoreApp.Utils.csproj">
+      <Project>{cd4b1057-3954-4e34-916b-a151d81e6275}</Project>
+      <Name>MusicStoreApp.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
