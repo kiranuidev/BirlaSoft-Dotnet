@@ -62,6 +62,15 @@
                                 
                             </ul>
                         </li>
+                         <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Album
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a runat="server" href="~/Album/Create">Create</a></li>
+                                                                <li><a runat="server" href="~/Album/AlbumList">Album List</a></li>
+                                
+                            </ul>
+                        </li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
