@@ -18,15 +18,18 @@ namespace MusicStoreApp.UI.Album
         }
         protected void CreateAlbum(object sender, EventArgs e)
         {
-            var service = new MusicStoreApp.Model.EFAlbum();
-            var album = new MusicStoreApp.Model.Album();
-            album.ArtistId = Convert.ToInt32(ddlArtist.SelectedValue);
-            album.GenreId = Convert.ToInt32(ddlGenre.SelectedValue);
-            album.AlbumArtUrl = AlbumArtUrl.Text;
-            album.Price = Convert.ToInt32(txtPrice.Text);
-            album.Title = txtName.Text;
-            service.CreateAlbum(album);
-            Response.Redirect("~/Album/AlbumList.aspx");
+            if (IsValid)
+            {
+                var service = new MusicStoreApp.Model.EFAlbum();
+                var album = new MusicStoreApp.Model.Album();
+                album.ArtistId = Convert.ToInt32(ddlArtist.SelectedValue);
+                album.GenreId = Convert.ToInt32(ddlGenre.SelectedValue);
+                album.AlbumArtUrl = AlbumArtUrl.Text;
+                album.Price = Convert.ToInt32(txtPrice.Text);
+                album.Title = txtName.Text;
+                service.CreateAlbum(album);
+                Response.Redirect("~/Album/AlbumList.aspx");
+            }
 
         }
 

@@ -12,6 +12,11 @@
                     <asp:DropDownList runat="server" ID="ddlGenre"
                          CssClass="form-control" 
                         />
+                    <asp:RequiredFieldValidator 
+                        runat="server"
+                        ID="vldGenre"
+                         ControlToValidate="ddlGenre"
+                        ErrorMessage="Genre Required"></asp:RequiredFieldValidator>
                    
                 </div>
             </div>
@@ -30,6 +35,19 @@
                     <asp:TextBox runat="server" ID="txtName"
                          CssClass="form-control" 
                         />
+                     <asp:RequiredFieldValidator 
+                        runat="server"
+                        ID="vldName"
+                         ControlToValidate="txtName"
+                         CssClass="txt-danger"
+                        ErrorMessage="Name Required"></asp:RequiredFieldValidator>
+                      <asp:RegularExpressionValidator 
+                        runat="server"
+                        ID="vldNameRegex"
+                         ControlToValidate="txtName"
+                         CssClass="txt-danger"
+                          ValidationExpression="[a-zA-Z ]*$"
+                        ErrorMessage="Invalid Name"></asp:RegularExpressionValidator>
                    
                 </div>
             </div>
@@ -39,6 +57,13 @@
                     <asp:TextBox runat="server" ID="txtPrice"
                          CssClass="form-control" 
                         />
+                      <asp:RegularExpressionValidator 
+                        runat="server"
+                        ID="regexPrice"
+                         ControlToValidate="txtPrice"
+                         CssClass="txt-danger"
+                          ValidationExpression="[0-9]*$"
+                        ErrorMessage="Invalid Price"></asp:RegularExpressionValidator>
                    
                 </div>
             </div>

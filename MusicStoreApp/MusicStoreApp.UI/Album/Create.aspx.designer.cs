@@ -22,6 +22,15 @@ namespace MusicStoreApp.UI.Album {
         protected global::System.Web.UI.WebControls.DropDownList ddlGenre;
         
         /// <summary>
+        /// vldGenre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldGenre;
+        
+        /// <summary>
         /// ddlArtist control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,24 @@ namespace MusicStoreApp.UI.Album {
         protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
+        /// vldName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldName;
+        
+        /// <summary>
+        /// vldNameRegex control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator vldNameRegex;
+        
+        /// <summary>
         /// txtPrice control.
         /// </summary>
         /// <remarks>
@@ -47,6 +74,15 @@ namespace MusicStoreApp.UI.Album {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
+        
+        /// <summary>
+        /// regexPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexPrice;
         
         /// <summary>
         /// AlbumArtUrl control.
